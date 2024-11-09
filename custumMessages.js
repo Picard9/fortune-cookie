@@ -4,7 +4,7 @@ const getFortune = () => {
     const colors = require('ansi-colors')
     const fortunes = require('./fortunes.json')
     const randomFortune = colors.red(fortunes[Math.floor(Math.random() * fortunes.length)]);
-    console.log(colors.yellow(`My Fortune Cookie Message: ${randomFortune}`));  // Random fortune will be display
+    return colors.yellow(`My Fortune Cookie Message: ${randomFortune}`);  // return Random fortune
 }
 
 module.exports = getFortune 
